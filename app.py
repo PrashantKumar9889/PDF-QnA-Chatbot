@@ -11,7 +11,7 @@ import streamlit as st
 from time import sleep
 
 
-llm = ChatGoogleGenerativeAI(model="gemini-3.5-flash")
+# llm = ChatGoogleGenerativeAI(model="gemini-3.5-flash")
 llm = ChatGoogleGenerativeAI(
     model="gemini-2.5-flash",
     google_api_key=st.secrets["GOOGLE_API_KEY"]
