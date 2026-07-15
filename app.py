@@ -12,6 +12,11 @@ from time import sleep
 
 
 llm = ChatGoogleGenerativeAI(model="gemini-3.5-flash")
+llm = ChatGoogleGenerativeAI(
+    model="gemini-2.5-flash",
+    google_api_key=st.secrets["GOOGLE_API_KEY"]
+)
+
 if "vector_store" not in st.session_state:
     st.session_state.vector_store = None
 
